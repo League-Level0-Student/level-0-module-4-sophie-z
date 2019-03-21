@@ -32,7 +32,7 @@ public class HappyPet {
 		// 6. If you determine the happiness level is large enough, tell the
 			//    user that he loves his pet and use break; to exit for loop.
 if(happinessLevel>49) {
-	JOptionPane.showMessageDialog(null, "Good job. You really do love your pet.");
+	JOptionPane.showMessageDialog(null, "Good job! You really do love your pet.");
 	break;
 	}
 else {
