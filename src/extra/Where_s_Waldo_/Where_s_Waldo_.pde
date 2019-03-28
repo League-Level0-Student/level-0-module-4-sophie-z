@@ -11,27 +11,30 @@ void draw() {
       // println("X: " + mouseX + " Y: " + mouseY); 
 println("X: " + mouseX + " Y: " + mouseY);
       // If the mouse is on Waldo, print "Waldo found!"
-if(){
-println("Waldo Found!");
+if(mouseX==181) {
+  println("Waldo Found!");
 playWoohoo();
 }
-      // If Waldo is found, also use the method below to play “Woohoo”
-      // Change the name of the sound file if you need to 
-      // If the mouse is pressed and they’re not on Waldo, play “Doh”
-      // Change the name of the sound file if you need to 
-else{
-playDoh();
-}
+else if(mouseY==168) {
+  println("Waldo Found!");
 }
 
+
+  playDoh();
+
+      // If Waldo is found, also use the method below to play “Woohoo” 
+      // Change the name of the sound file if you need to 
+      // If the mouse is pressed and they’re not on Waldo, play “Doh” 
+      // Change the name of the sound file if you need to 
+}
 void playWoohoo() {
      Woohoo.stop();
      Woohoo.trigger();
 }
 
 void playDoh() {
-     doh.stop();
-     doh.trigger();
+    doh.stop();
+    doh.trigger();
 }
 
 import ddf.minim.*;
